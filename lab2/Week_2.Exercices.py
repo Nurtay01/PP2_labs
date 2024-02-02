@@ -16,7 +16,7 @@ print(bool(0))
 False
 
 
-#OPERATORS
+#OPERATORSS
 #ex1
 print(10 *5)
 #ex2

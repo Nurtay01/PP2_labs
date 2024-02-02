@@ -453,7 +453,7 @@ while i < 6:
 else:
   print("i is no longer less than 6")
 
-# FOR LOOPS
+# FOR LOOPSS
 # example 1
 fruits = ["apple", "banana", "cherry"]
 for x in fruits:
