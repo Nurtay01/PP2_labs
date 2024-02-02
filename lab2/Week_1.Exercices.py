@@ -1,125 +1,130 @@
-﻿# BOOLEANS
-# exercise 1
+﻿#BOOLEAN
+#ex1
 print(10 > 9)
 True
-# exercise 2
+#ex2
 print(10 == 9)
 False
-# exercise 3
+#ex3
 print(10 < 9)
 False
-# exercise 4
+#ex4
 print(bool("abc"))
 True
-# exercise 5
+#ex5
 print(bool(0))
 False
 
-# OPERATORS
-# exercise 1
-print(10*5)
-# exercise 2
-print(10/2)
-# exercise 3
+
+#OPERATORS
+#ex1
+print(10 *5)
+#ex2
+print(10 /2)
+#ex3
 fruits = ["apple", "banana"]
 if "apple" in fruits:
   print("Yes, apple is a fruit!")
-# exercise 4
-if 5 != 10:
+#ex4
+if 5!=10:
   print("5 and 10 is not equal")
-# exercise 5
+#ex5
 if 5 == 10 or 4 == 4:
   print("At least one of the statements is true")
 
-# LISTS
-# exercise 1
+
+#LISTS
+#ex1  
 fruits = ["apple", "banana", "cherry"]
 print(fruits[1])
-# exarcise 2
+#ex2
 fruits = ["apple", "banana", "cherry"]
-fruits[0] = "kiwi"
-# exercise 3
+fruits[0]="kiwi"
+#ex3
 fruits = ["apple", "banana", "cherry"]
 fruits.append("orange")
-# exercise 4
+#ex4
 fruits = ["apple", "banana", "cherry"]
-fruits.insert(1, "lemon")
-# exercise 5
+fruits.insert(1,"lemon")
+#ex5
 fruits = ["apple", "banana", "cherry"]
 fruits.remove("banana")
-# exercise 6
+#ex6
+fruits = ["apple", "banana", "cherry"]
+print(fruits[-1])
+#ex7
 fruits = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
-print(fruits[3:6])
-# exercise 7
-fruits = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
-print(fruits[2:6])
-# exercise 8
+print(fruits[2:5])
+#ex8
 fruits = ["apple", "banana", "cherry"]
 print(len(fruits))
 
-# TUPLES
-# exercise 1
+
+#TUPLES
+#ex1  
 fruits = ("apple", "banana", "cherry")
 print(fruits[0])
-# exercise 2
+#ex2
 fruits = ("apple", "banana", "cherry")
 print(len(fruits))
-# exercise 3
+#ex3
 fruits = ("apple", "banana", "cherry")
 print(fruits[-1])
-# exercise 4
+#ex4
 fruits = ("apple", "banana", "cherry", "orange", "kiwi", "melon", "mango")
 print(fruits[2:5])
 
-#SETS
-#exercise1
+
+#SEEETS
+#ex1
 fruits = {"apple", "banana", "cherry"}
 if "apple" in fruits:
   print("Yes, apple is a fruit!")
-#exercise2
+#ex2
 fruits = {"apple", "banana", "cherry"}
 fruits.add("orange")
-#exercise3
+#ex3
 fruits = {"apple", "banana", "cherry"}
 more_fruits = ["orange", "mango", "grapes"]
 fruits.update(more_fruits)
-#exercise4
+#ex4
 fruits = {"apple", "banana", "cherry"}
 fruits.remove("banana")
-#exercise5
+#ex5
 fruits = {"apple", "banana", "cherry"}
 fruits.discard("banana")
 
+
 #DICTIONARY
-#exercise1
+#ex1
 car =	{
   "brand": "Ford",
   "model": "Mustang",
   "year": 1964
 }
 print(car.get("model"))
-#exercise2
+#ex2
 car =	{
   "brand": "Ford",
   "model": "Mustang",
   "year": 1964
 }
 car["year"]=2020
-#exercise3
+#ex3
 car =	{
   "brand": "Ford",
   "model": "Mustang",
   "year": 1964
 }
 car["color"]="red"
-#exercise4
+#ex4
 car =	{
   "brand": "Ford",
   "model": "Mustang",
   "year": 1964
 }
 car.pop("model")
-#exercise5
+#ex5
 car =	{
   "brand": "Ford",
   "model": "Mustang",
@@ -127,25 +132,26 @@ car =	{
 }
 car.clear()
 
+
 #IF_ELSE
-#exercise1
+#ex1
 a = 50
 b = 10
 if a>b:
     print("Hello World")
-#exercise2
+#ex2
 a = 50
 b = 10
 if a!=b: 
     print("Hello World")
-#exercise3
+#ex3
 a = 50
 b = 10
 if a==b:
     print("Yes")
 else:
     print("No")
-#exercise4
+#ex4
 a = 50
 b = 10
 if a==b:
@@ -154,62 +160,70 @@ elif a>b:
   print("2")
 else:
   print("3")
-# exercise 7
+#ex5
+if a == b and c == d:
+  print("Hello")
+#ex6
+if a == b or c == d:
+  print("Hello")
+#ex7
 if 5 > 2:
     print("YES")
-#exercise8
+#ex8
 a = 2
 b = 5
 print("YES") if a == b else print("NO")
-#exercise9
+#ex9
 a = 2
 b = 50
 c = 2
 if a == c or b == c:
   print("YES")
-  
+
+
 #WHILE_LOOP
-#exercise1
+#ex1
 i = 1
 while i < 6:
     print(i)
     i += 1
-#exercise2
+#ex2
 i = 1
 while i < 6:
   if i == 3:
     break
   i += 1
-#exercise3
+#ex3
 i = 0
 while i < 6:
   i += 1
   if i == 3:
     continue
   print(i)
-#exercise4  
+#ex4  
 i = 1
 while i < 6:
   print(i)
   i += 1
 else:
   print("i is no longer less than 6")
-  
+
+
 #FOR_LOOOOP
-#exercise1
+#ex1
 fruits = ["apple", "banana", "cherry"]
 for x in fruits:
   print(x)
-#exercise2
+#ex2
 fruits = ["apple", "banana", "cherry"]
 for x in fruits:
   if x == "banana":
     continue
   print(x)
-#exercise3
+#ex3
 for x in range(6):
   print(x)
-#exercise4  
+#ex4  
 fruits = ["apple", "banana", "cherry"]
 for x in fruits:
   if x == "banana":
