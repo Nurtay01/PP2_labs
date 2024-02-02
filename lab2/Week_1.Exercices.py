@@ -154,13 +154,7 @@ elif a>b:
   print("2")
 else:
   print("3")
-#exercise5
-if a == b and c == d:
-  print("Hello")
-#exercise6
-if a == b or c == d:
-  print("Hello")
-#exercise7
+# exercise 7
 if 5 > 2:
     print("YES")
 #exercise8
