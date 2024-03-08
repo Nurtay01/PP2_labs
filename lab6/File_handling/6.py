@@ -1,10 +1,9 @@
 ﻿import string
 
-import os
+def generate_files():
+    for letter in string.ascii_uppercase:
+        filename = letter + ".txt"
+        with open(filename, 'w') as file:
+            file.write(f"This is file {filename}")
 
-if not os.path.exists("letters"):
-   os.makedirs("letters")
-
-for letter in string.ascii_uppercase:
-   with open(letter + ".txt", "w") as f:
-       f.writelines(letter)
+generate_files()
