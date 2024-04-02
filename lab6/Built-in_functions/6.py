@@ -1,6 +1,7 @@
-﻿char = "A"
+﻿import os
+char = "A"
 while char <= "Z":
-    filepath = r"C:\\Users\\Gray\\Desktop\\Code\\PP2\\Lab_6\\files\\" + char + ".txt"
+    filepath = r"C:\Users\Администратор\Desktop\PP2_labs\lab6\Built-in_functions\6.py" + char + ".txt"
     with open(filepath, "w") as f:
         f.close()
     char = chr(ord(char) + 1)
