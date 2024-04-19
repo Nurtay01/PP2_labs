@@ -20,7 +20,7 @@ walk_left = [pygame.image.load('Game/Person2/q.png'),
 clock = pygame.time.Clock()
 count = 0
 bg_x = 0
-bg_s = pygame.mixer.Sound('Game/music1.mp3')
+bg_s = pygame.mixer.Sound('Game/Sakura-Girl-Motivation-chosic.com_.mp3')
 bg_s.play()
 while 1:
     sc.blit(bg,(bg_x,0))

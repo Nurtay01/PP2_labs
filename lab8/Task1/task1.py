@@ -16,8 +16,8 @@ font_score = pygame.font.SysFont("Verdana", 20)
 game_over = font.render("GAME OVER", True, (255, 255, 255))
 
 #Загружаем фотку улицы и музыку заднего фона (что бы она играла бесконечно)
-image = pygame.image.load(r"lab8/images/AnimatedStreet.png")
-pygame.mixer.Sound(r"lab8/catch-up-if-you-can-199590.mp3").play(-1)
+image = pygame.image.load(r"lab8/Task1/images/AnimatedStreet.png")
+pygame.mixer.Sound(r"lab8/Task1/music/catch-up-if-you-can-199590.mp3").play(-1)
 
 #создаем окно с длинной 400 и высотой 600, фпс это для скорости обнавления игры, название игры
 screen = pygame.display.set_mode((400,600))
@@ -29,7 +29,7 @@ class Player(pygame.sprite.Sprite):
     #Загружаем фотку нашей машины и даем ей размеры и координаты центра где она должна появиться в начали игры
     def __init__(self):
         super().__init__()
-        self.image = pygame.image.load(r'lab8/car2.png')
+        self.image = pygame.image.load(r'lab8/Task1/images/car2.png')
         self.rect = self.image.get_rect()
         self.rect.center = (160,520)
     
@@ -51,7 +51,7 @@ class Enemy(pygame.sprite.Sprite):
     #Загружаем фотку нашей машины и даем ей размеры и координаты центра где она должна появиться в начали игры
     def __init__(self):
         super().__init__()
-        self.image = pygame.image.load(r'lab8/images/car.png')
+        self.image = pygame.image.load(r'lab8/Task1/images/car.png')
         self.rect = self.image.get_rect()
         self.rect.center = (random.randint(40,400 - 40),0)
 
@@ -70,7 +70,7 @@ class Coin(pygame.sprite.Sprite):
     #Загружаем фотку, даем размеры и рандомные координаты
     def __init__(self):
         super().__init__()
-        self.image = pygame.image.load(r"lab8/images/coin.png")
+        self.image = pygame.image.load(r"lab8/Task1/images/coin.png")
         self.image = pygame.transform.scale(self.image,(30,35))
         self.rect = self.image.get_rect()
         self.rect.center = (random.randint(40,360),0)
@@ -88,7 +88,7 @@ class Coin(pygame.sprite.Sprite):
             score_coins += 1
             self.rect.top = 0
             self.rect.center = (random.randint(40,360),0)
-            pl = pygame.mixer.Sound(r"lab8/lab8_race_coinsMusic.mp3")
+            pl = pygame.mixer.Sound(r"lab8/Task1/music/lab8_race_coinsMusic.mp3")
             pl.play()
 
 
@@ -133,7 +133,7 @@ while status:
     #Проверка на соприкосновение с противником
     if pygame.sprite.spritecollideany(p1,enemies):
         pygame.mixer.stop()
-        pygame.mixer.Sound(r'lab8/lab8_race_crash.wav').play()
+        pygame.mixer.Sound(r'lab8/Task1/lab8_race_crash.wav').play()
         time.sleep(0.5)
 
         #заливаем экран красным и выводим текст

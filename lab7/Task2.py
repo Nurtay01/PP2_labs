@@ -1,18 +1,22 @@
 ﻿import pygame
 
 pygame.init()
-W = 600
-H = 400
+W = 222
+H = 332
 sc = pygame.display.set_mode((W, H))
+pygame.display.set_caption("Music_Player")
+bg = pygame.image.load("lab7/images/d179c5c424ed339058effcb85c3f0f49.jpg")
 clock = pygame.time.Clock()
 
-music_list = ["lab7/music1.mp3", "lab7/music2.mp3"]
+music_list = ["lab7/musics/music1.mp3", "lab7/musics/music2.mp3"]
 index = 0
 track = pygame.mixer.Sound(music_list[index])
 
 playing = False
 
 while True:
+    sc.blit(bg,(0,0))
+    pygame.display.update()
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             pygame.quit()

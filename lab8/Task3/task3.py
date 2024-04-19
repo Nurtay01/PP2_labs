@@ -13,7 +13,7 @@ GREEN = (0,255,0)
 BLUE = (0,0,255)
 BLACK = (0,0,0)
 active_size = 0
-active_color = WHITE
+active_color = BLACK
 
 sc.fill(WHITE)
 pygame.display.update()
@@ -68,4 +68,4 @@ while True:
                     
     brushes , colors , rgbs = draw_menu()       
     pygame.display.update()        
-    clock.tick(60)
+    clock.tick(60) 
