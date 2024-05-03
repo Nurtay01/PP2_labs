@@ -116,4 +116,18 @@ while running:
             food_timer += 1
             # Генерация новой еды, если старая не съедена вовремя
             if food_timer > 50:
-                food_type
+                food_type = select_food()
+                food_pos = random.randint(0, MSIZE[0]-1), random.randint(0, MSIZE[1]-1)
+                food_timer = 0
+
+        sc.blit(font_level.render(f"Level: {len(snake)}", True, "yellow"), (5, 5))
+        sc.blit(font_score.render(f"Score: {score}", True, "yellow"), (W-600, 5))
+        pygame.display.flip()
+    else:
+        # Вывод сообщения о конце игры
+        text = font_game_over.render(f"GAME OVER", True, "white")
+        sc.blit(text, (W // 2 - text.get_width() // 2, H // 2 - 50))
+        sc.blit(font_level.render(f"Level: {len(snake)}", True, "yellow"), (5, 5))
+        sc.blit(font_score.render(f"Score: {score}", True, "yellow"), (W-600, 5))
+        pygame.display.flip()
+    clock.tick(FPS)
